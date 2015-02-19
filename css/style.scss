@@ -1,0 +1,120 @@
+$background_color: #eee;
+$navbar_color: #fff;
+$navbar_background_color: #36424a;
+$navbar_link_color: #ff953f;
+
+body{
+	font-family:'Arial', sans-serif;
+	background: background_color;
+	line-height:1.6em;
+}
+
+.navbar{
+	overflow:auto;
+	min-height:100px;
+	background: $navbar_background_color;
+	color: $navbar_color;
+	font-size:18px;
+	border:0;
+	border-radius: 0;
+}
+
+.navbar {
+	h1 {
+		margin:10px 0 0 0;
+		padding:0;
+	}
+
+	a {
+		color: $navbar_color !important;
+		
+		hover {
+			color: $navbar_link_color;
+		}
+
+		.navbar-brand:hover {
+			color: $navbar_color !important;
+		}
+	}
+
+	ul {
+		margin-top:22px;
+	}
+}	
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	background:none;
+	color: $navbar_link_color !important;
+}
+
+.search-form {
+	margin-top:30px;
+
+	input[type='text']{
+		border-radius:0;
+		height:38px;
+	}
+
+	.btn{
+		border:0;
+		height:38px;
+		margin-top:0;
+		border-radius: 0;
+		margin-left:-5px;
+	}
+
+	.form-control{
+		background:#f4f4f4;
+		border:1px solid background_color;
+	}
+}
+
+.btn{
+	border:none;
+	border-radius:0;
+}
+
+.btn-primary{
+	background: $navbar_link_color
+}
+
+.btn:hover{
+	background:#ccc;
+}
+
+.post{
+	border:1px #ccc solid;
+	background: $navbar_color;
+	margin-bottom:30px;
+
+	img{
+		width:100%;
+	}
+	
+	h3{
+		margin:0;
+		padding:0;
+	}
+
+	small{
+		background: $navbar_background_color;
+		color: $navbar_color;
+		display:block;
+		margin:10px 0;
+		padding:5px 10px;
+	}
+}
+
+.post-content{
+	padding:20px;
+	box-sizing:border-box;
+}
+
+footer{
+	background: $navbar_background_color;
+	color: $navbar_color;
+	text-align: center;
+	height:60px;
+	padding-top:20px;
+	margin-top:30px;
+}
