@@ -17,7 +17,7 @@ body {
   padding: 0; }
 .navbar a {
   color: #fff !important; }
-  .navbar a hover {
+  .navbar a :hover {
     color: #ff953f; }
   .navbar a .navbar-brand:hover {
     color: #fff !important; }
@@ -46,12 +46,11 @@ body {
 .btn {
   border: none;
   border-radius: 0; }
+  .btn :hover {
+    background: #ccc; }
 
 .btn-primary {
   background: #ff953f; }
-
-.btn:hover {
-  background: #ccc; }
 
 .post {
   border: 1px #ccc solid;

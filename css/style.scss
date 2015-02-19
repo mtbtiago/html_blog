@@ -25,7 +25,7 @@ body{
 	a {
 		color: $navbar_color !important;
 		
-		hover {
+		:hover {
 			color: $navbar_link_color;
 		}
 
@@ -69,14 +69,13 @@ body{
 .btn{
 	border:none;
 	border-radius:0;
+	:hover{
+		background:#ccc;
+	}
 }
 
 .btn-primary{
 	background: $navbar_link_color
-}
-
-.btn:hover{
-	background:#ccc;
 }
 
 .post{
